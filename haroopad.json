@@ -1,0 +1,22 @@
+{
+    "homepage": "http://pad.haroopress.com/page.html/",
+    "version": "0.13.1",
+    "license": "MIT",
+    "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/Haroopad-v0.13.1-win-x64.msi",
+    "hash": "a1020f55d4ec92c824ed6e5a3db941eaae6ffeb2334a77fa3465fe2736304a86",
+    "extract_dir": "Haroopad",
+    "bin": "haroopad.exe",
+    "shortcuts": [
+        [
+            "haroopad.exe",
+            "Haroopad"
+        ]
+    ],
+    "checkver": {
+    	"url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/",
+    	"re": "[Hh]aroopad-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/$version-win-x64.msi"
+    }
+}
