@@ -1,28 +1,29 @@
 {
     "homepage": "http://pad.haroopress.com",
-    "version": "0.13.1",
+    "description": "Haroopad - The Next Document processor based on Markdown",
+    "version": "Haroopad-v0.13.2",
     "license": "GPL-3.0",
-    "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/Haroopad-v0.13.1-win-x64.msi",
-    "hash": "unknown",
-    "extract_dir": "Haroopad",
-    "bin": "haroopad.exe",
-    "shortcuts": [
-        [
-            "haroopad.exe",
-            "Haroopad"
-        ]
-    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/Haroopad-v0.13.2-win-x64.msi",
+            "hash": "3d9299bac01a8db68e251dbe2d4755fd93e4ded5e24ce82db0ee58684f59d22d",
+            "bin": "haroopad.exe",
+            "shortcuts": [
+                [
+                    "haroopad.exe",
+                    "Haroopad"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/",
-        "re": "([Hh]aroopad-v[\\d.]+)"
+        "re": "([Hh]aroopad-v[\\d.]+)-win-x64.msi"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/$version-win-x64.msi"
-            },
-            "32bit": {
-                "url": "https://bitbucket.org/rhiokim/haroopad-download/downloads/$version-win-x32.msi"
             }
         }
     }
