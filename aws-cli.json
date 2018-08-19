@@ -1,0 +1,29 @@
+{
+    "homepage": "aws.amazon.com/cli‎",
+    "description": "Unified Tool to Manage Your AWS Services. Start a Free Account Now!",
+    "version": "1.15.77",
+    "license": "Apache2.0",
+    "architecture": {
+        "64bit": {
+            "url": "unk",
+            "hash": "unk",
+            "bin": "aws.cmd",
+            "shortcuts": [
+                [
+                    "aws.cmd",
+                    "Aws"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/aws/aws-cli"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi"
+            }
+        }
+    }
+}
