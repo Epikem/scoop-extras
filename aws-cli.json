@@ -10,7 +10,7 @@
             "bin": "aws.cmd",
             "shortcuts": [
                 [
-                    "aws.cmd",
+                    "Amazon\\AWSCLI\\bin\\aws.cmd",
                     "Aws"
                 ]
             ]
