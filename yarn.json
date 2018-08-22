@@ -1,0 +1,38 @@
+{
+    "homepage": "https://yarnpkg.com/",
+    "description": "Dependency manager",
+    "license": "BSD-2-Clause",
+    "version": "1.9.3",
+    "suggest": {
+        "Node.js": [
+            "nodejs",
+            "nodejs-lts"
+        ],
+        "NVM": [
+            "nvm"
+        ]
+    },
+    "url": "https://yarnpkg.com/downloads/1.9.4/yarn-1.9.4.msi",
+    "hash": "5ca0adb78d2f3a718d7a1feef0496d8ead9bca599367dff0f98cd742d5a72fdd",
+    "persist": [
+        "cache",
+        "bin",
+        "mirror"
+    ],
+    "post_install": [
+        "yarn config set cache-folder \"$dir\\cache\"",
+        "yarn config set yarn-offline-mirror \"$dir\\mirror\"",
+        "yarn config set prefix \"$dir\""
+    ],
+    "env_add_path": [
+        "bin",
+        "Yarn\\bin"
+    ],
+    "checkver": {
+        "url": "https://yarnpkg.com/latest-version",
+        "re": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://s3.ap-northeast-2.amazonaws.com/epikem-files/yarn-1.9.4-unsigned.msi"
+    }
+}
