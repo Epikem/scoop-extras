@@ -2,7 +2,7 @@
     "homepage": "https://yarnpkg.com/",
     "description": "Dependency manager",
     "license": "BSD-2-Clause",
-    "version": "1.9.3",
+    "version": "1.9.4",
     "suggest": {
         "Node.js": [
             "nodejs",
@@ -12,8 +12,8 @@
             "nvm"
         ]
     },
-    "url": "https://yarnpkg.com/downloads/1.9.4/yarn-1.9.4.msi",
-    "hash": "5ca0adb78d2f3a718d7a1feef0496d8ead9bca599367dff0f98cd742d5a72fdd",
+    "url": "https://s3.ap-northeast-2.amazonaws.com/epikem-files/yarn-1.9.4-unsigned.msi",
+    "hash": "737e70abbb2d7f33080644c438e8621de0456a50db244766d9c4ddfc8044ab10",
     "persist": [
         "cache",
         "bin",
