@@ -31,13 +31,14 @@
     },
     "checkver": {
         "url": "https://www.elastic.co/downloads/past-releases",
-        "re": "logstash-([\\d-]+)"
+        "re": "logstash-(\\d+)-(\\d+)-(\\d+)",
+        "replace": "${1}.${2}.${3}"
     },
     "autoupdate": {
         "url": "https://artifacts.elastic.co/downloads/logstash/logstash-$version.zip",
         "extract_dir": "logstash-$version",
         "hash": {
-            "url": "$url.sha1"
+            "url": "$url.sha512"
         }
     }
 }
