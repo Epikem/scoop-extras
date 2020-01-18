@@ -2,7 +2,7 @@
     "homepage": "https://yarnpkg.com/",
     "description": "Dependency manager",
     "license": "BSD-2-Clause",
-    "version": "1.19.0",
+    "version": "1.21.1",
     "suggest": {
         "Node.js": [
             "nodejs",
